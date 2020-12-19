@@ -1,0 +1,17 @@
+package com.duan.netty.thirdexample;
+
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.SimpleChannelInboundHandler;
+
+/**
+ * @Author DJ
+ * @Date 2020-11-30 0:54
+ */
+public class MyChatClientHandler extends SimpleChannelInboundHandler<String> {
+
+    @Override
+    protected void channelRead0(ChannelHandlerContext ctx, String msg) throws Exception {
+        System.out.println(msg + "\n");
+    }
+
+}
